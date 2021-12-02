@@ -11,35 +11,48 @@ Guardar cambios en cada edicion del codigo: Git add . -->
         <meta name="autor" content="Garcia Andres"/>
         <meta name="keywords" content="Full Stack, Argentina Programa, Grupo 74"/>
         <title>Programando mi web</title>
+        <link rel="stylesheet" href="elementos.css"> <!--Linkeo a mi hoja de estilo en donde tendre todas mis configuraciones de estilos :D-->
+        <link rel="stylesheet" href="clases.css">
     </head>
+
+    <div> <!-- Agrego un div para luego personalizar esa division en la hoja de estilo-->
+        <header><!--Anidando de etiquetas-->
+            <h1>#YoProgramo, Mi primer sitio web </h1>
+        </header>
+    </div>
     
     <body>
-        <header> <h1>#YoProgramo, Mi primer sitio web </h1></header> <!--Anidando de etiquetas-->
 
-        <nav><!--Abro un navegador "menu" y le inserto una lista que luego podre modificar o darle estilos-->
-            <ul> <!-- abrir un "<ul>" para generar una lista, dentro los elementos de la lista "<li>" -->
-                <li>Contenido HTML</li>
-                <li>Contenido CSS</li>
-                <li>Contenido JS</li>
-            </ul>
-        </nav>
+        <div class="menu">
+            <nav><!--Abro un navegador "menu" y le inserto una lista que luego podre modificar o darle estilos-->
+                <ul> <!-- abrir un "<ul>" para generar una lista, dentro los elementos de la lista "<li>" -->
+                    <li>Contenido HTML</li>
+                    <li>Contenido CSS</li>
+                    <li>Contenido JS</li>
+                </ul>
+            </nav>
+        </div>
+            
 
-        <section> <!-- Creando una seccion-->
-            <article>
-                <h2>El conocimiento es poder.</h2>
-                <time datetime="01/12/21">Publicado el 01/12/21</time> <!--SEO: Brindo info al navegador-->
-                <p>"Mientras más conocimiento una persona tenga sobre algo o alguien, más poder tendrá. 
-                    Grosso modo, la frase se refiere a cómo el conocimiento sobre algo nos entrega más opciones y mejores maneras de enfrentar la situación.</p>
-            </article>
+        <div class="delimit">
+            <section> <!-- Creando una seccion-->
+                <article>
+                    <h2>El conocimiento es poder.</h2>
+                    <time datetime="01/12/21">Publicado el 01/12/21</time> <!--SEO: Brindo info al navegador-->
+                    <p>"Mientras más conocimiento una persona tenga sobre algo o alguien, más poder tendrá. 
+                        Grosso modo, la frase se refiere a cómo el conocimiento sobre algo nos entrega más opciones y mejores maneras de enfrentar la situación.</p>
+                </article>
+    
+                <article>
+                    <h2>Si piensas en ganar, llevas un paso adelante.</h2>
+                    <time datetime="01/12/21">Publicado el 01/12/21</time>
+                    <!--A continuacion agrego un <h4>, un link <a> y una cita <cite> -->
+                    <h4><a href="https://psicologiaymente.com/psicologia/profecias-autocumplidas-fracaso"><cite>El poder de la creencia por sobre la realidad.</cite></a></h4>
+                    <p>Creer “algo” no es sinónimo de que ese “algo” efectivamente exista. Sin embargo, el mero hecho de creerlo, muchas veces alcanza para convertirlo en una realidad luego comprobable. Es por eso que debemos cuidar la influencia que juegan nuestras expectativas en nuestra forma de pensar.</p>
+                </article>
+            </section>
 
-            <article>
-                <h2>Si piensas en ganar, llevas un paso adelante.</h2>
-                <time datetime="01/12/21">Publicado el 01/12/21</time>
-                <!--A continuacion agrego un <h4>, un link <a> y una cita <cite> -->
-                <h4><a href="https://psicologiaymente.com/psicologia/profecias-autocumplidas-fracaso"><cite>El poder de la creencia por sobre la realidad.</cite></a></h4>
-                <p>Creer “algo” no es sinónimo de que ese “algo” efectivamente exista. Sin embargo, el mero hecho de creerlo, muchas veces alcanza para convertirlo en una realidad luego comprobable. Es por eso que debemos cuidar la influencia que juegan nuestras expectativas en nuestra forma de pensar.</p>
-            </article>
-        </section>
+        </div>
         
     </body>
     
